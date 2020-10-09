@@ -6,7 +6,7 @@
 	main.cpp
 */
 
-#include "main.h"
+#include "kshow.h"
 #include "formats.h"
 
 QList<KShowWindow> KShowWindow::windowList;

@@ -1,0 +1,345 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kShow 0.2.0\n"
+"POT-Creation-Date: 1999-02-17 23:08+0100\n"
+"PO-Revision-Date: 1999-02-23 12:30+0100\n"
+"Last-Translator: Francois-Xavier Duranceau <Francois-Xavier.Duranceau@loria.fr>\n"
+
+#: kshow.cpp:31
+msgid "New Window"
+msgstr "Nouvelle fenêtre"
+
+#: kshow.cpp:34 kshow.cpp:66
+msgid "Open..."
+msgstr "Ouvrir..."
+
+#: kshow.cpp:36
+msgid "Catalog Open..."
+msgstr "Ouvrir un catalogue..."
+
+#: kshow.cpp:39
+msgid "Copy To..."
+msgstr "Copier vers..."
+
+#: kshow.cpp:43
+msgid "Exit"
+msgstr "Quitter"
+
+#: kshow.cpp:47
+msgid "Info..."
+msgstr "Info..."
+
+#: kshow.cpp:50
+msgid "Listing..."
+msgstr "Liste..."
+
+#: kshow.cpp:52
+msgid "Thumbnails..."
+msgstr "Vignettes..."
+
+#: kshow.cpp:58
+msgid "&File"
+msgstr "&Fichier"
+
+#: kshow.cpp:59
+msgid "&Image"
+msgstr "&Image"
+
+#: kshow.cpp:60
+msgid "&Options"
+msgstr "&Options"
+
+#: kshow.cpp:62
+msgid "&Help"
+msgstr "&Aide"
+
+#: kshow.cpp:69
+msgid "Copy Image To ..."
+msgstr "Copier l'image vers..."
+
+#: kshow.cpp:72
+msgid "View Thumbnail"
+msgstr "Affichage des vignettes"
+
+#: kshow.cpp:77
+msgid "Prev Image"
+msgstr "Image précédente"
+
+#: kshow.cpp:80
+msgid "Next Image"
+msgstr "Image suivante"
+
+#: kshow.cpp:85
+msgid "Picture Show"
+msgstr "Lancer le diaporama"
+
+#: kshow.cpp:88
+msgid "Show Stop"
+msgstr "Arrêter le diaporama"
+
+#: kshow.cpp:99
+msgid "Image 0 from 0     "
+msgstr "Image 0 sur 0      "
+
+#: kshow.cpp:100
+msgid "Welcome to kShow..."
+msgstr "Bienvenue dans kShow..."
+
+#: kshow.cpp:232
+msgid "Image "
+msgstr "Image "
+
+#: kshow.cpp:232
+msgid " from "
+msgstr " sur "
+
+#: kshow.cpp:558 kshow.cpp:646
+msgid "kShow Warning"
+msgstr "kShow - Avertissement"
+
+#: kshow.cpp:559 kshow.cpp:647
+msgid ""
+"A Document with this Name exists already\n"
+"Do you want to overwrite it ?"
+msgstr ""
+"Un document ayant ce nom existe déjà\n"
+"Voulez-vous l'écraser ?"
+
+#: kshow.cpp:562 kshow.cpp:650
+msgid "Yes"
+msgstr "Oui"
+
+#: kshow.cpp:563 kshow.cpp:651
+msgid "No"
+msgstr "Non"
+
+#: kshow.cpp:567 kshow.cpp:622 kshow.cpp:655 kshow.cpp:669 listdlg.cpp:145
+#: listdlg.cpp:153
+msgid "kShow Message"
+msgstr "kShow - Message"
+
+#: kshow.cpp:568 kshow.cpp:656
+msgid "You do not have write permission to this file.\n"
+msgstr "Vous n'avez pas la permission d'écrire ce fichier.\n"
+
+#: kshow.cpp:623
+msgid "You do not have read permission to this file.\n"
+msgstr "Vous n'avez pas la permission de lire ce fichier.\n"
+
+#: kshow.cpp:670
+msgid "You do not have write permission to this directory.\n"
+msgstr "Vous n'avez pas la permission d'écrire dans ce répertoire.\n"
+
+#: pixview.cpp:34
+msgid "Restore"
+msgstr "Taille originale"
+
+#: pixview.cpp:35
+msgid "Zoom in..."
+msgstr "Zoom avant..."
+
+#: pixview.cpp:36
+msgid "Zoom out..."
+msgstr "Zoom arrière..."
+
+#: configdlg.cpp:21
+msgid "kShow Options"
+msgstr "Options de kShow"
+
+#: configdlg.cpp:25
+msgid "Window"
+msgstr "Fenêtre"
+
+#: configdlg.cpp:27
+msgid "ImageShow"
+msgstr "Diaporama"
+
+#: configdlg.cpp:29
+msgid "PCD Image"
+msgstr "Image PCD"
+
+#: configdlg.cpp:31
+msgid "Thumbnail"
+msgstr "Vignette"
+
+#: configdlg.cpp:42
+msgid "fixed Rectangle"
+msgstr "Taille fixe"
+
+#: configdlg.cpp:45
+msgid "Window Width:"
+msgstr "Largeur de la fenêtre :"
+
+#: configdlg.cpp:53
+msgid "Window Height:"
+msgstr "Hauteur de la fenêtre :"
+
+#: configdlg.cpp:61
+msgid "BackgroundColor:"
+msgstr "Couleur de fond :"
+
+#: configdlg.cpp:80
+msgid "Delay Time"
+msgstr "Délai"
+
+#: configdlg.cpp:89
+msgid "Seconds"
+msgstr "Secondes"
+
+#: configdlg.cpp:104
+msgid "show forward"
+msgstr "en avant"
+
+#: configdlg.cpp:107
+msgid "show backward"
+msgstr "en arrière"
+
+#: configdlg.cpp:110
+msgid "show random"
+msgstr "aléatoire"
+
+#: configdlg.cpp:113
+msgid "show loop"
+msgstr "en boucle"
+
+#: configdlg.cpp:123
+msgid "Extract Size"
+msgstr "Taille d'extraction"
+
+#: configdlg.cpp:143
+msgid "Extract Mode"
+msgstr "Mode d'extraction"
+
+#: configdlg.cpp:147
+msgid "Color"
+msgstr "Couleur"
+
+#: configdlg.cpp:151
+msgid "Gray"
+msgstr "Gris"
+
+#: configdlg.cpp:155
+msgid "Negative"
+msgstr "Négatif"
+
+#: configdlg.cpp:168
+msgid "Thumbnail Size"
+msgstr "Taille de vignette"
+
+#: configdlg.cpp:172
+msgid "60x60"
+msgstr "60x60"
+
+#: configdlg.cpp:176
+msgid "80x80"
+msgstr "80x80"
+
+#: configdlg.cpp:180
+msgid "100x100"
+msgstr "100x100"
+
+#: configdlg.cpp:192 listdlg.cpp:65
+msgid "Save"
+msgstr "Enregistrer"
+
+#: configdlg.cpp:197
+msgid "Use"
+msgstr "Utiliser"
+
+#: configdlg.cpp:202 progdlg.cpp:19
+msgid "Cancel"
+msgstr "Annuler"
+
+#: infodlg.cpp:21
+msgid "kShow Information"
+msgstr "kShow - Information"
+
+#: infodlg.cpp:45
+msgid "Name:"
+msgstr "Nom :"
+
+#: infodlg.cpp:53
+msgid "Path:"
+msgstr "Chemin :"
+
+#: infodlg.cpp:61
+msgid "Width:"
+msgstr "Largeur :"
+
+#: infodlg.cpp:69
+msgid "Height:"
+msgstr "Hauteur :"
+
+#: infodlg.cpp:77
+msgid "Format:"
+msgstr "Format :"
+
+#: infodlg.cpp:85
+msgid "File length:"
+msgstr "Taille du fichier :"
+
+#: infodlg.cpp:93
+msgid "Comment:"
+msgstr "Commentaire :"
+
+#: infodlg.cpp:99 listdlg.cpp:70
+msgid "Ok"
+msgstr "Ok"
+
+#: listdlg.cpp:22
+msgid "kShow Imagelisting"
+msgstr "kShow - Liste des images"
+
+#: listdlg.cpp:50
+msgid "View"
+msgstr "Afficher"
+
+#: listdlg.cpp:55
+msgid "Add"
+msgstr "Ajouter"
+
+#: listdlg.cpp:60
+msgid "Remove"
+msgstr "Enlever"
+
+#: listdlg.cpp:142
+msgid "Directory cannot be adding"
+msgstr "Un répertoire ne peut pas être ajouté"
+
+#: listdlg.cpp:148
+msgid ""
+"is not an Image File\n"
+"           or\n"
+"Image Format known"
+msgstr ""
+"n'est pas un fichier Image\n"
+"           ou\n"
+"Format d'image inconnu"
+
+#: progdlg.cpp:17
+msgid "kShow search"
+msgstr "kShow - Recherche"
+
+#: progdlg.cpp:18
+msgid "Images to Directory ..."
+msgstr "Images vers répertoire..."
+
+#: album.cpp:173
+msgid "kShow Thumbnail"
+msgstr "kShow - Vignettes"
+
+#: album.cpp:181
+msgid "Page: "
+msgstr "Page : "
+
+#: album.cpp:188
+msgid "Prev Page"
+msgstr "Page précédente"
+
+#: album.cpp:191
+msgid "Next Page"
+msgstr "Page suivante"
+
+#: album.cpp:194
+msgid "Quit"
+msgstr "Fermer"

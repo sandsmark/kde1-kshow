@@ -6,6 +6,9 @@
 	configdlg.h
 */
 
+#ifndef CONFIGDLG_H 
+#define CONFIGDLG_H 
+
 #include <stdlib.h>
 #include <time.h>
 
@@ -18,25 +21,30 @@
 #include <qlined.h>
 #include <qbttngrp.h>
 #include <qlcdnum.h>
+#include <qspinbox.h>
 
 // KDE
 #include <kapp.h>
 #include <ktabctl.h>
 #include <kcolorbtn.h>
-#include <kspinbox.h>
-#include <kintegerline.h>
 #include <kslider.h>
 
 struct opt_struct{
 
-	bool WinFix;
-	QString WinWidth;
-	QString WinHeight;
-	QColor WinColor;
-	int ShowAction;
-	int ShowTime;
-	bool ShowLoop;
+	bool	WinFix;
+	int	WinWidth;
+	int	WinHeight;
+	QColor	WinColor;
+	int	ShowAction;
+	int	ShowTime;
+	bool	ShowLoop;
+	QString	PcdOpt;
+	int	ThumSize;
+	int	ToolIcon;
 };
+
+#define KdeTbI 1
+#define AppTbI 2
 
 class ConfigDialog : public QDialog {
 
@@ -46,15 +54,8 @@ public:
 	ConfigDialog( QWidget *parent );
 	~ConfigDialog() {};	
 
-	void setOptions(struct opt_struct optstr);
-	struct opt_struct getOptions();
-	bool		WinFix;
-	QString		WinWidth;
-	QString		WinHeight;
-	QColor		WinColor;
-	int		ShowAction;
-	int		ShowTime;
-	bool		ShowLoop;
+	void setOptions(opt_struct optionstr);
+	opt_struct getOptions();
 
 private slots:
 	void press_use();
@@ -62,28 +63,35 @@ private slots:
 	void click_win_fix();
 	void setFix();
 	void colorchange( const QColor &newColor );
-	void widthchange( const char *newWidth );
-	void heightchange( const char *newHeight );
+	void widthchange( int newWidth );
+	void heightchange( int newHeight );
 	void showvalue_1();
 	void showvalue_2();
 	void showvalue_3();
 	void click_dia_loop();
 	void timechange( int newtime );
 
+	void pressPcdSize( int s );
+	void pressPcdMode( int m );
+	void selectThumb( int t);
+	void selectToolIcon( int i);
+
 private:
-	struct opt_struct optstr;
 	QPushButton	*use;
 	QPushButton	*save;
 	QPushButton	*cancel;
 	KTabCtl		*karten;
 	QWidget		*window;
 	QWidget		*diashow;
+	QWidget		*pcdimage;
+	QWidget		*album;
+	QWidget		*privat;
 	KConfig		*config;	
 
 // Window Settings
 	QCheckBox	*win_fix;
 	QLabel		*lb_width, *lb_height, *lb_bgcolor;
-	QLineEdit	*win_width, *win_height;
+	QSpinBox	*win_width, *win_height;
 	KColorButton	*win_bgcolor;
 
 // Diashow Settings
@@ -92,5 +100,26 @@ private:
 	KSlider		*slider;
 	QButtonGroup	*bg;
 	QCheckBox	*dia_for, *dia_bac, *dia_ran, *dia_loop;
+
+// PCD Image Settings
+	
+	QPushButton	*pcd_a, *pcd_b, *pcd_c;
+	QPushButton	*pcd_rgb, *pcd_gray, *pcd_ycc;
+	QButtonGroup	*pcd_size, *pcd_mode;
+	QStrList	mode_list;
+	QString		PcdSize, PcdMode;
+
+// Thumbnail Settings
+	QPushButton	*thum_0, *thum_1, *thum_2;
+	QButtonGroup	*thum_size;
+
+// Private Settings
+	QButtonGroup	*tb_style;
+	QPushButton	*tb_kde, *tb_app;
+	QLabel		*lb_kde, *lb_app;
+
+protected:
+	opt_struct	optstr;
 };
 
+#endif // CONFIGDLG_H 

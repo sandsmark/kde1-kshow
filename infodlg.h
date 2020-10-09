@@ -6,6 +6,9 @@
 	infodlg.h
 */
 
+#ifndef INFODLG_H 
+#define INFODLG_H 
+
 // QT
 #include <qdialog.h>
 #include <qlabel.h>
@@ -41,3 +44,4 @@ private:
 			
 };
 
+#endif // INFODLG_H 

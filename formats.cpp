@@ -1,24 +1,12 @@
-#include <kdebug.h>
-#include <qimage.h>
 #include "formats.h"
-#include "gif.h"
+#include "netpbm.h"
 
 extern void read_jpeg_jfif(QImageIO *);
 
-static int numFormats= 6;
-//static int numFormats= 5;
+static int numFormats= 11;
+//static int numFormats= 8;
 
 static FormatRecord formatlist[]= {
-#ifndef QT13B_TESTER
-  {
-   "GIF",
-   FormatRecord::ReadFormat | FormatRecord::WriteFormat,
-   "^GIF[0-9][0-9][a-z]",
-   "*.gif",
-   "gif",
-   read_gif_file, write_gif_file,
-},
-#else
   {
     "GIF",
     FormatRecord::InternalFormat | FormatRecord::ReadFormat | FormatRecord::WriteFormat,
@@ -27,11 +15,10 @@ static FormatRecord formatlist[]= {
     "gif",
     0, 0,
   },
-#endif
   {
     "JPEG",
     FormatRecord::ReadFormat,
-    "^\377\330\377\340",
+    "^\377\330\377\340",		// \377\330\377\356 for jpg
     "*.jpeg *.jpg",
     "jpeg",
     read_jpeg_jfif, 0,
@@ -39,7 +26,7 @@ static FormatRecord formatlist[]= {
   {
     "BMP",
     FormatRecord::InternalFormat | FormatRecord::ReadFormat | FormatRecord::WriteFormat,
-    0,
+    "^BM",
     "*.bmp",
     "bmp",
     0, 0,
@@ -55,7 +42,7 @@ static FormatRecord formatlist[]= {
   {
     "XPM",
     FormatRecord::InternalFormat | FormatRecord::ReadFormat | FormatRecord::WriteFormat,
-    0,
+    "^/* XPM*/",                      //  /*\ XPM\*/
     "*.xpm",
     "xpm",
     0, 0,
@@ -63,9 +50,52 @@ static FormatRecord formatlist[]= {
   {
     "PNM",
     FormatRecord::InternalFormat | FormatRecord::ReadFormat | FormatRecord::WriteFormat,
-    "*.pbm *.pgm *.ppm",
+    0,	
+    "*.pbm *.pgm",
+    "pnm",
+    0, 0
+  },
+  {
+    "PPM",
+    FormatRecord::InternalFormat | FormatRecord::ReadFormat | FormatRecord::WriteFormat,
+    0,	
+    "*.ppm",
     "ppm",
     0, 0
+  },
+
+// new formats , you most include netpbmtools
+  {
+    "ILBM",
+    FormatRecord::ReadFormat,
+    "^FORM....ILBM",
+    "*.iff *.ilbm",
+    "iff",
+    read_ilbm , 0
+  },
+  {
+    "PCX",
+    FormatRecord::ReadFormat,
+    "\012[0\2\3\4\5]\001",
+    "*.pcx",
+    "pcx",
+    read_pcx , 0
+  },
+  {
+    "TIFF",
+    FormatRecord::ReadFormat,
+    "^I[I][*]",
+    "*.tif",
+    "tif",
+    read_tiff , 0
+  },
+  {
+    "PCD",
+    FormatRecord::ReadFormat,
+    "\xff\xff\xff\xff\xff\xff\xff",    // PCD_IPI=image / PCD_OPA =uebersicht
+    "*.pcd",
+    "pcd",
+    read_pcd , 0
   }
 };
 
@@ -155,4 +185,3 @@ const char *FormatManager::suffix(const char *format)
   else
     return 0;
 }
-

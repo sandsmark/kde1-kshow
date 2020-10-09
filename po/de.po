@@ -1,0 +1,379 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kShow 0.2.1\n"
+"POT-Creation-Date: 1999-03-06 05:08+0100\n"
+"PO-Revision-Date: 1999-02-17 23:08+0100\n"
+"Last-Translator: Ralf Berger <rberger@fun.horx.de>\n"
+
+#: kshow.cpp:25 kshow.cpp:346
+msgid "New Window"
+msgstr "Neues Fenster"
+
+#: kshow.cpp:27 kshow.cpp:52 kshow.cpp:347
+msgid "Open..."
+msgstr "Öffnen..."
+
+#: kshow.cpp:28 kshow.cpp:348
+msgid "Catalog Open..."
+msgstr "Katalog Öffnen..."
+
+#: kshow.cpp:30 kshow.cpp:349
+msgid "Copy To..."
+msgstr "Kopieren nach..."
+
+#: kshow.cpp:32
+msgid "Exit"
+msgstr "Beenden"
+
+#: kshow.cpp:35 kshow.cpp:351
+msgid "Info..."
+msgstr "Info..."
+
+#: kshow.cpp:37 kshow.cpp:352
+msgid "Listing..."
+msgstr "Liste..."
+
+#: kshow.cpp:38 kshow.cpp:353
+msgid "Thumbnails..."
+msgstr "Vorschau..."
+
+#: kshow.cpp:44
+msgid "&File"
+msgstr "&Datei"
+
+#: kshow.cpp:45
+msgid "&Image"
+msgstr "&Bilder"
+
+#: kshow.cpp:46
+msgid "&Options"
+msgstr "&Einstellungen"
+
+#: kshow.cpp:48
+msgid "&Help"
+msgstr "&Hilfe"
+
+#: kshow.cpp:53
+msgid "Copy Image To ..."
+msgstr "Kopiere Bild nach..."
+
+#: kshow.cpp:54
+msgid "View Thumbnail"
+msgstr "Zeige Bildvorschau"
+
+#: kshow.cpp:56
+msgid "Prev Image"
+msgstr "vorheriges Bild"
+
+#: kshow.cpp:57
+msgid "Next Image"
+msgstr "nächstes Bild"
+
+#: kshow.cpp:60
+msgid "Picture Show"
+msgstr "Start BilderShow"
+
+#: kshow.cpp:61
+msgid "Show Stop"
+msgstr "Stop BilderShow"
+
+#: kshow.cpp:69
+msgid "Image 0 from 0     "
+msgstr "Bild 0 von 0      "
+
+#: kshow.cpp:70
+msgid "Welcome to kShow..."
+msgstr "Willkommen bei kShow..."
+
+#: kshow.cpp:114
+msgid ""
+"They installed a new version of kShow.!!!\n"
+"The configuration file changed. They should\n"
+"check kShow the adjustments and store again.\n"
+"Much fun still ...\n"
+"                          rberger@fun.horx.de"
+msgstr ""
+"Sie haben eine neue Version von kShow installiert !!!\n"
+"Die Konfigurationsdatei hat sich geändert. Bitte Über-\n"
+"prüfen sie die Einstellungen und speichern diese erneut.\n"
+"Viel Spaß noch ...\n"
+"                          rberger@fun.horx.de"
+
+#: kshow.cpp:218
+msgid "Image "
+msgstr "Bild "
+
+#: kshow.cpp:218
+msgid " from "
+msgstr " von "
+
+#: kshow.cpp:563 kshow.cpp:649
+msgid "kShow Warning"
+msgstr "kShow Warnung"
+
+#: kshow.cpp:564 kshow.cpp:650
+msgid ""
+"A Document with this Name exists already\n"
+"Do you want to overwrite it ?"
+msgstr ""
+"Ein Dokument mit diesem Namen existiert schon\n"
+"Wollen Sie es Überschreiben ?"
+
+#: kshow.cpp:566 kshow.cpp:652
+msgid "Yes"
+msgstr "Ja"
+
+#: kshow.cpp:566 kshow.cpp:652
+msgid "No"
+msgstr "Nein"
+
+#: kshow.cpp:570 kshow.cpp:625 kshow.cpp:656 kshow.cpp:670 listdlg.cpp:145
+#: listdlg.cpp:153
+msgid "kShow Message"
+msgstr "kShow Mitteilung"
+
+#: kshow.cpp:571 kshow.cpp:657
+msgid "You do not have write permission to this file.\n"
+msgstr "Sie haben keine Schreibrechte für diese Datei.\n"
+
+#: kshow.cpp:626
+msgid "You do not have read permission to this file.\n"
+msgstr "Sie haben keine Leserechte für diese Datei.\n"
+
+#: kshow.cpp:671
+msgid "You do not have write permission to this directory.\n"
+msgstr "Sie haben keine Schreibrechte für dieses Verzeichnis.\n"
+
+#: pixview.cpp:34
+msgid "Restore"
+msgstr "Orginalgröße"
+
+#: pixview.cpp:35
+msgid "Zoom in..."
+msgstr "Zoom hinein..."
+
+#: pixview.cpp:36
+msgid "Zoom out..."
+msgstr "Zoom heraus..."
+
+#: configdlg.cpp:21
+msgid "kShow Options"
+msgstr "kShow Einstellungen"
+
+#: configdlg.cpp:25
+msgid "Window"
+msgstr "Fenster"
+
+#: configdlg.cpp:27
+msgid "ImageShow"
+msgstr "BilderShow"
+
+#: configdlg.cpp:29
+msgid "PCD Image"
+msgstr "PCD Bild"
+
+#: configdlg.cpp:31
+msgid "Thumbnail"
+msgstr "Vorschau"
+
+#: configdlg.cpp:33
+msgid "Privat"
+msgstr "Privat"
+
+#: configdlg.cpp:44
+msgid "fixed Rectangle"
+msgstr "feste Fenstergröße"
+
+#: configdlg.cpp:47
+msgid "Window Width:"
+msgstr "Fenster Breite:"
+
+#: configdlg.cpp:54
+msgid "Window Height:"
+msgstr "Fenster Höhe:"
+
+#: configdlg.cpp:61
+msgid "BackgroundColor:"
+msgstr "Hintergrundfarbe:"
+
+#: configdlg.cpp:80
+msgid "Delay Time"
+msgstr "Warte Zeit"
+
+#: configdlg.cpp:89
+msgid "Seconds"
+msgstr "Sekunden"
+
+#: configdlg.cpp:104
+msgid "show forward"
+msgstr "zeige vorwärts"
+
+#: configdlg.cpp:107
+msgid "show backward"
+msgstr "zeige rückwärts"
+
+#: configdlg.cpp:110
+msgid "show random"
+msgstr "zeige zufällig"
+
+#: configdlg.cpp:113
+msgid "show loop"
+msgstr "zeige mehrmals"
+
+#: configdlg.cpp:123
+msgid "Extract Size"
+msgstr "Lade Größe"
+
+#: configdlg.cpp:143
+msgid "Extract Mode"
+msgstr "Lade Modus"
+
+#: configdlg.cpp:147
+msgid "Color"
+msgstr "Farbe"
+
+#: configdlg.cpp:151
+msgid "Gray"
+msgstr "Graustufen"
+
+#: configdlg.cpp:155
+msgid "Negative"
+msgstr "Negativ"
+
+#: configdlg.cpp:168
+msgid "Thumbnail Size"
+msgstr "Vorschau Größe"
+
+#: configdlg.cpp:172
+msgid "60x60"
+msgstr "60x60"
+
+#: configdlg.cpp:176
+msgid "80x80"
+msgstr "80x80"
+
+#: configdlg.cpp:180
+msgid "100x100"
+msgstr "100x100"
+
+#: configdlg.cpp:192
+msgid "Toolbar Style"
+msgstr "Toolbar Stil"
+
+#: configdlg.cpp:202
+msgid "KDE Standart"
+msgstr "KDE Standart"
+
+#: configdlg.cpp:212
+msgid "kShow Magic"
+msgstr "kShow Magic"
+
+#: configdlg.cpp:223 listdlg.cpp:65
+msgid "Save"
+msgstr "Speichern"
+
+#: configdlg.cpp:228
+msgid "Use"
+msgstr "Benutzen"
+
+#: configdlg.cpp:233 progdlg.cpp:19
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: infodlg.cpp:21
+msgid "kShow Information"
+msgstr "kShow Bildinfo"
+
+#: infodlg.cpp:45
+msgid "Name:"
+msgstr "Name:"
+
+#: infodlg.cpp:53
+msgid "Path:"
+msgstr "Pfad:"
+
+#: infodlg.cpp:61
+msgid "Width:"
+msgstr "Breite:"
+
+#: infodlg.cpp:69
+msgid "Height:"
+msgstr "Höhe:"
+
+#: infodlg.cpp:77
+msgid "Format:"
+msgstr "Format:"
+
+#: infodlg.cpp:85
+msgid "File length:"
+msgstr "Dateilänge:"
+
+#: infodlg.cpp:93
+msgid "Comment:"
+msgstr "Kommentar:"
+
+#: infodlg.cpp:99 listdlg.cpp:70
+msgid "Ok"
+msgstr "Ok"
+
+#: listdlg.cpp:22
+msgid "kShow Imagelisting"
+msgstr "kShow Bilderliste"
+
+#: listdlg.cpp:50
+msgid "View"
+msgstr "Anzeigen"
+
+#: listdlg.cpp:55
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: listdlg.cpp:60
+msgid "Remove"
+msgstr "Entfernen"
+
+#: listdlg.cpp:142
+msgid "Directory cannot be adding"
+msgstr "Verzeichnisse können nicht hinzugefügt werden"
+
+#: listdlg.cpp:148
+msgid ""
+"is not an Image File\n"
+"           or\n"
+"Image Format known"
+msgstr ""
+"das ist keine Bilddatei\n"
+"           oder\n"
+"Bildformat unbekannt"
+
+#: progdlg.cpp:17
+msgid "kShow search"
+msgstr "kShow sucht"
+
+#: progdlg.cpp:18
+msgid "Images to Directory ..."
+msgstr "Bilder in Verzeichnissen"
+
+#: album.cpp:277
+msgid "kShow Thumbnail"
+msgstr "kShow Bildervorschau"
+
+#: album.cpp:313
+msgid "Page: "
+msgstr "Seite: "
+
+#: album.cpp:319
+msgid "Prev Page"
+msgstr "vorherige Seite"
+
+#: album.cpp:322
+msgid "Next Page"
+msgstr "nächste Seite"
+
+#: album.cpp:325
+msgid "Resize full Vertical"
+msgstr "voll vertikal Vergrößern"
+
+#: album.cpp:328
+msgid "Quit Thumbnail"
+msgstr "Bildervorschau schließen"

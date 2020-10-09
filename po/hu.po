@@ -1,0 +1,349 @@
+# KTranslator Generated File
+
+msgid ""
+msgstr ""
+"Project-Id-Version: kShow 0.2.0\n"
+"POT-Creation-Date: 1999-02-17 23:08+0100\n"
+"PO-Revision-Date: Thu Mar 4 1999 12:43:52+0100\n"
+"Last-Translator: Marcell Lengyel <miketkf@yahoo.com>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"X-Generator: KTranslator v 0.4.0"
+
+#: kshow.cpp:31
+msgid "New Window"
+msgstr "Új ablak"
+
+#: kshow.cpp:34 kshow.cpp:66
+msgid "Open..."
+msgstr "Megnyitás..."
+
+#: kshow.cpp:36
+msgid "Catalog Open..."
+msgstr "Katalógus megnyitás..."
+
+#: kshow.cpp:39
+msgid "Copy To..."
+msgstr "Másol..."
+
+#: kshow.cpp:43
+msgid "Exit"
+msgstr "Kilép"
+
+#: kshow.cpp:47
+msgid "Info..."
+msgstr "Infó..."
+
+#: kshow.cpp:50
+msgid "Listing..."
+msgstr "Lista..."
+
+#: kshow.cpp:52
+msgid "Thumbnails..."
+msgstr "Vázlatok..."
+
+#: kshow.cpp:58
+msgid "&File"
+msgstr "&Fájl"
+
+#: kshow.cpp:59
+msgid "&Image"
+msgstr "&Kép"
+
+#: kshow.cpp:60
+msgid "&Options"
+msgstr "&Beállítások"
+
+#: kshow.cpp:62
+msgid "&Help"
+msgstr "&Segítség"
+
+#: kshow.cpp:69
+msgid "Copy Image To ..."
+msgstr "Kép másolása..."
+
+#: kshow.cpp:72
+msgid "View Thumbnail"
+msgstr "Vázlatok megtekintése"
+
+#: kshow.cpp:77
+msgid "Prev Image"
+msgstr "Elõzõ kép"
+
+#: kshow.cpp:80
+msgid "Next Image"
+msgstr "Következõ kép"
+
+#: kshow.cpp:85
+msgid "Picture Show"
+msgstr "Diavetítés"
+
+#: kshow.cpp:88
+msgid "Show Stop"
+msgstr "Diavetítés állj"
+
+#: kshow.cpp:99
+msgid "Image 0 from 0     "
+msgstr "0. kép, 0-ból     "
+
+#: kshow.cpp:100
+msgid "Welcome to kShow..."
+msgstr "Üdvözöllek a kShow-ban"
+
+#: kshow.cpp:232
+msgid "Image "
+msgstr "Kép "
+
+#: kshow.cpp:232
+msgid " from "
+msgstr " össz: "
+
+#: kshow.cpp:558 kshow.cpp:646
+msgid "kShow Warning"
+msgstr "kShow figyelmeztetés"
+
+#: kshow.cpp:559 kshow.cpp:647
+msgid ""
+"A Document with this Name exists already\n"
+"Do you want to overwrite it ?"
+msgstr ""
+"Ilyen nevû fájl már létezik\n"
+"Felül akarja írni?"
+
+#: kshow.cpp:562 kshow.cpp:650
+msgid "Yes"
+msgstr "Igen"
+
+#: kshow.cpp:563 kshow.cpp:651
+msgid "No"
+msgstr "Nem"
+
+#: kshow.cpp:567 kshow.cpp:622 kshow.cpp:655 kshow.cpp:669 listdlg.cpp:145
+#: listdlg.cpp:153
+msgid "kShow Message"
+msgstr "kShow Üzenet"
+
+#: kshow.cpp:568 kshow.cpp:656
+msgid "You do not have write permission to this file.\n"
+msgstr "Nincs írás jogod erre a fájlra.\n"
+
+#: kshow.cpp:623
+msgid "You do not have read permission to this file.\n"
+msgstr "Nincsen olvasás jogod erre a fájlra.\n"
+
+#: kshow.cpp:670
+msgid "You do not have write permission to this directory.\n"
+msgstr "Nincsen írás jogod erre a könyvtárra.\n"
+
+#: pixview.cpp:34
+msgid "Restore"
+msgstr "Visszaállít"
+
+#: pixview.cpp:35
+msgid "Zoom in..."
+msgstr "Nagyít..."
+
+#: pixview.cpp:36
+msgid "Zoom out..."
+msgstr "Kicsinyít..."
+
+#: configdlg.cpp:21
+msgid "kShow Options"
+msgstr "kShow beállítások"
+
+#: configdlg.cpp:25
+msgid "Window"
+msgstr "Ablak"
+
+#: configdlg.cpp:27
+msgid "ImageShow"
+msgstr "Diavetítés"
+
+#: configdlg.cpp:29
+msgid "PCD Image"
+msgstr "PCD Kép"
+
+#: configdlg.cpp:31
+msgid "Thumbnail"
+msgstr "Vázlat"
+
+#: configdlg.cpp:42
+msgid "fixed Rectangle"
+msgstr "rögzített négyszög"
+
+#: configdlg.cpp:45
+msgid "Window Width:"
+msgstr "Ablak szélesség:"
+
+#: configdlg.cpp:53
+msgid "Window Height:"
+msgstr "Ablak magasság:"
+
+#: configdlg.cpp:61
+msgid "BackgroundColor:"
+msgstr "Háttérszín:"
+
+#: configdlg.cpp:80
+msgid "Delay Time"
+msgstr "Késleltetés"
+
+#: configdlg.cpp:89
+msgid "Seconds"
+msgstr "másodperc"
+
+#: configdlg.cpp:104
+msgid "show forward"
+msgstr "diák sorban elõrõl"
+
+#: configdlg.cpp:107
+msgid "show backward"
+msgstr "diák sorban hátulról"
+
+#: configdlg.cpp:110
+msgid "show random"
+msgstr "diák véletlenszerûen"
+
+#: configdlg.cpp:113
+msgid "show loop"
+msgstr "ismétlõdjön"
+
+#: configdlg.cpp:123
+msgid "Extract Size"
+msgstr "Méret"
+
+#: configdlg.cpp:143
+msgid "Extract Mode"
+msgstr "Megjelenítés"
+
+#: configdlg.cpp:147
+msgid "Color"
+msgstr "Színes"
+
+#: configdlg.cpp:151
+msgid "Gray"
+msgstr "Szürke"
+
+#: configdlg.cpp:155
+msgid "Negative"
+msgstr "Negatív"
+
+#: configdlg.cpp:168
+msgid "Thumbnail Size"
+msgstr "Vázlat mérete"
+
+#: configdlg.cpp:172
+msgid "60x60"
+msgstr "60x60"
+
+#: configdlg.cpp:176
+msgid "80x80"
+msgstr "80x80"
+
+#: configdlg.cpp:180
+msgid "100x100"
+msgstr "100x100"
+
+#: configdlg.cpp:192 listdlg.cpp:65
+msgid "Save"
+msgstr "Mentés"
+
+#: configdlg.cpp:197
+msgid "Use"
+msgstr "Alkalmaz"
+
+#: configdlg.cpp:202 progdlg.cpp:19
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: infodlg.cpp:21
+msgid "kShow Information"
+msgstr "kShow Képinformációk"
+
+#: infodlg.cpp:45
+msgid "Name:"
+msgstr "Név:"
+
+#: infodlg.cpp:53
+msgid "Path:"
+msgstr "Elérés:"
+
+#: infodlg.cpp:61
+msgid "Width:"
+msgstr "Szélesség:"
+
+#: infodlg.cpp:69
+msgid "Height:"
+msgstr "Magasság:"
+
+#: infodlg.cpp:77
+msgid "Format:"
+msgstr "Formátum:"
+
+#: infodlg.cpp:85
+msgid "File length:"
+msgstr "Fájl méret:"
+
+#: infodlg.cpp:93
+msgid "Comment:"
+msgstr "Megjegyzés:"
+
+#: infodlg.cpp:99 listdlg.cpp:70
+msgid "Ok"
+msgstr "Ok"
+
+#: listdlg.cpp:22
+msgid "kShow Imagelisting"
+msgstr "kShow Képlista"
+
+#: listdlg.cpp:50
+msgid "View"
+msgstr "Megtekint"
+
+#: listdlg.cpp:55
+msgid "Add"
+msgstr "Hozzáad"
+
+#: listdlg.cpp:60
+msgid "Remove"
+msgstr "Eltávolít"
+
+#: listdlg.cpp:142
+msgid "Directory cannot be adding"
+msgstr "Könyvtárat nem lehet hozzáadni"
+
+#: listdlg.cpp:148
+msgid ""
+"is not an Image File\n"
+"           or\n"
+"Image Format known"
+msgstr ""
+"       nem kép fájl\n"
+"              vagy\n"
+"ismeretlen kép formátum"
+
+#: progdlg.cpp:17
+msgid "kShow search"
+msgstr "kShow keresés"
+
+#: progdlg.cpp:18
+msgid "Images to Directory ..."
+msgstr "Képek a könyvtárban..."
+
+#: album.cpp:173
+msgid "kShow Thumbnail"
+msgstr "kShow Vázlatok"
+
+#: album.cpp:181
+msgid "Page: "
+msgstr "Oldal: "
+
+#: album.cpp:188
+msgid "Prev Page"
+msgstr "Elõzõ oldal"
+
+#: album.cpp:191
+msgid "Next Page"
+msgstr "Következõ oldal"
+
+#: album.cpp:194
+msgid "Quit"
+msgstr "Kilép"
