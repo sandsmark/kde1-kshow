@@ -8,6 +8,7 @@
 
 #include "kshow.h"
 #include "formats.h"
+#include "jpeg.h"
 
 #include <kpreview.h>
 
@@ -18,7 +19,10 @@ static FormatManager	*formatMngr;
 
 static bool previewHandler (const KFileInfo *fi, const QString fileName,QString &, QPixmap & pi)
 {
-    return pi.load(fileName);
+    doing_previews = true;
+    bool ret = pi.load(fileName);
+    doing_previews = false;
+    return ret;
 }
 
 int main( int argc, char **argv ) {

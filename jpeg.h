@@ -18,6 +18,8 @@
 void read_jpeg_jfif(QImageIO *image);
 void write_jpeg_jfif(QImageIO *image);
 
+extern bool doing_previews;
+
 //////
 // Plug-in source manager for IJG JPEG compression/decompression library
 //
@@ -49,6 +51,6 @@ void qimageio_term_source(j_decompress_ptr cinfo);
 // Buffer for file reads (max bytes)
 // ?? Is this good enough? Bigger, perhaps?
 
-#define INPUT_BUFFER_SIZE 4096
+#define INPUT_BUFFER_SIZE 1024 * 10
 
 #endif

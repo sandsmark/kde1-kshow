@@ -16,12 +16,16 @@
 #include"qpixmap.h"
 #include"jpeg.h"
 
+#include <algorithm>
+#include <cmath>
+
 extern "C"
 {
 #include"jpeglib.h"
 }
 
 
+bool doing_previews = false;
 
 /////////////////////
 //
@@ -62,11 +66,44 @@ void read_jpeg_jfif(QImageIO * iio)
     struct jpeg_decompress_struct cinfo;
     struct jpeg_error_mgr jerr;
 
+    if (doing_previews) {
+        puts("Doing previews");
+        cinfo.dct_method = JDCT_IFAST;
+        cinfo.do_fancy_upsampling = FALSE;
+    }
+
     cinfo.err = jpeg_std_error(&jerr);
     jpeg_create_decompress(&cinfo);
 
     qimageio_jpeg_src(&cinfo, &s);
     jpeg_read_header(&cinfo, TRUE);
+
+    jpeg_calc_output_dimensions(&cinfo);
+
+    // randomly chosen
+    if (cinfo.image_width > 5000 || cinfo.image_width > 5000) {
+        jpeg_destroy_decompress(&cinfo);
+        return;
+    }
+
+    if (doing_previews) {
+        if (cinfo.image_width > 512 || cinfo.image_width > 512) {
+            cinfo.scale_num = std::ceil(
+                    8. / std::min(
+                        cinfo.image_width / 512.,
+                        cinfo.image_height / 512.
+                    )
+                );
+
+            if (cinfo.scale_num < 1) {
+                cinfo.scale_num = 1;
+            } else if (cinfo.scale_num > 8) {
+                cinfo.scale_num = 8;
+            }
+
+            cinfo.scale_denom = 8;
+        }
+    }
 
 
 
