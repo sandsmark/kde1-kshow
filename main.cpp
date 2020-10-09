@@ -28,7 +28,7 @@ int main( int argc, char **argv ) {
 	KShowWindow *kShow = new KShowWindow();
 	KShowWindow::windowList.append( kShow );
 
-	formatMngr= new FormatManager();
+	formatMngr= FormatManager::instance();
 	kShow->show();
 
 	QStrList argList;

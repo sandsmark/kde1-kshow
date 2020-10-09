@@ -14,7 +14,10 @@ public:
 
 class FormatManager {
 public:
-	FormatManager();
+    static FormatManager *instance() {
+        static FormatManager inst;
+        return &inst;
+    }
 	virtual ~FormatManager();
    
 	const char *allImagesGlob();
@@ -23,6 +26,7 @@ public:
 	const char *suffix(const char *format); 
 
 protected:
+	FormatManager();
 	QList <FormatRecord> list;
 	virtual void init(FormatRecord formatlist[]);
 	QStrList names;

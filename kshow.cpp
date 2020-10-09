@@ -9,6 +9,8 @@
 #include <kshow.h>
 #include <kshow.moc>
 
+#include "formats.h"
+
 extern KApplication *app;
 
 KShowWindow::KShowWindow( QWidget *, const char *name )
@@ -195,7 +197,7 @@ void KShowWindow::Quit() {
 
 void KShowWindow::Load() {
 
-	fileUrl = KFilePreviewDialog::getOpenFileURL();
+	fileUrl = KFilePreviewDialog::getOpenFileURL(QDir::homeDirPath(), FormatManager::instance()->allImagesGlob());
 
 	if ( !fileUrl.isNull() ) {
 		fileList.clear();

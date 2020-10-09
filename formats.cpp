@@ -101,7 +101,7 @@ static FormatRecord formatlist[]= {
 
 FormatManager::FormatManager()
 {
-   list.setAutoDelete(TRUE);
+   list.setAutoDelete(FALSE);
    init(formatlist);
 }
 
