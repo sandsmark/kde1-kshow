@@ -1,0 +1,63 @@
+# @CXXFLAGS@     : is set to -g -Wall (when debuging) or -O2 -Wall (when not)
+# @all_includes@ : is set to all needed include paths for QT, KDE and X11
+# -I..           : needed for config.h
+# Debugging      : -DKSHOWDEBUG
+CFLAGS= @CXXFLAGS@ @all_includes@ -DHAVE_CONFIG_H -I..
+
+# @LDFLAGS@    : is set to -s (when not debuging) for stripping
+# @all_libra.@ : is set to all needed libraries paths for QT, KDE and X11
+LFLAGS = @LDFLAGS@ @all_libraries@ -lkdecore -lkdeui -lkfm -lkfile -lgif -ljpeg -lqt -lXext -lX11
+
+# both are clear, I think
+CC      = @CXX@
+MOC     = @MOC@
+
+####### Files
+
+SOURCES	=	formats.cpp gif.cpp jpeg.cpp kshow.cpp QwViewport.cpp pixview.cpp configdlg.cpp infodlg.cpp listdlg.cpp main.cpp
+HEADERS	=	formats.h gif.h jpeg.h jpeginc.h QwViewport.h pixview.h configdlg.h infodlg.h listdlg.h main.h  
+OBJECTS	=	formats.o gif.o jpeg.o kshow.o QwViewport.o pixview.o configdlg.o infodlg.o listdlg.o main.o
+SRCMETA	=	moc_main.cpp moc_QwViewport.cpp moc_pixview.cpp moc_configdlg.cpp moc_infodlg.cpp moc_listdlg.cpp
+OBJMETA	=	moc_main.o moc_QwViewport.o moc_pixview.o moc_configdlg.o moc_infodlg.o moc_listdlg.o
+TARGET	=	kShow
+
+####### Implicit rules
+
+.SUFFIXES: .cpp
+
+.cpp.o:
+	$(CC) -c $(CFLAGS) $<
+
+####### Meta objects
+
+moc_%.cpp: %.h
+	$(MOC) $< -o $@
+
+####### Build rules
+
+all: $(TARGET)
+
+$(TARGET): $(HEADERS) $(OBJECTS) $(OBJMETA) 
+	$(CC) $(OBJECTS) $(OBJMETA) -o $(TARGET) $(LFLAGS)
+
+depend:
+	@makedepend $(SOURCES) 2> /dev/null
+
+clean:
+	-rm -f `find . -name '*.bak' -o -name '*~' -o -name '*%' -o -name '#*' `
+	-rm -f $(SRCMETA) $(OBJECTS) $(OBJMETA)
+	-rm -f $(TARGET)
+
+install: all
+	-cp -f kShow @prefix@/bin
+	-cp -f icons/kshow.kdelnk @prefix@/share/applnk/Graphics
+	-cp -f icons/kshow.xpm @prefix@/share/icons
+	-cp -f icons/mini/kshow.xpm @prefix@/share/icons/mini
+
+uninstall:
+	-rm -f @prefix@/bin/kShow
+	-rm -f @prefix@/share/applnk/Graphics/kshow.kdelnk
+	-rm -f @prefix@/share/icons/kshow.xpm
+	-rm -f @prefix@/share/icons/mini/kshow.xpm	
+
+# DO NOT DELETE THIS LINE -- make depend depends on it.

@@ -1,0 +1,19 @@
+# KDE Config File
+[KDE Desktop Entry]
+SwallowExec=
+SwallowTitle=
+BinaryPattern=kshow;
+Name=kShow
+Protocols=
+MiniIcon=kshow.xpm
+MimeType=image/gif;image/jpeg;image/x-xbm;image/x-xpm;
+Comment=Bildanzeiger
+Name[de]=kShow
+Exec=kShow %u
+Icon=kshow.xpm
+TerminalOptions=
+Path=
+DocPath=kshow/index.html
+Type=Application
+Comment[de]=Bildanzeiger
+Terminal=0
