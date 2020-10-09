@@ -195,7 +195,7 @@ void KShowWindow::Quit() {
 
 void KShowWindow::Load() {
 
-	fileUrl = KFileDialog::getOpenFileURL();
+	fileUrl = KFilePreviewDialog::getOpenFileURL();
 
 	if ( !fileUrl.isNull() ) {
 		fileList.clear();

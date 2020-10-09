@@ -9,15 +9,22 @@
 #include "kshow.h"
 #include "formats.h"
 
+#include <kpreview.h>
+
 QList<KShowWindow> KShowWindow::windowList;
 
 KApplication	*app;
-FormatManager	*formatMngr;
+static FormatManager	*formatMngr;
+
+static bool previewHandler (const KFileInfo *fi, const QString fileName,QString &, QPixmap & pi)
+{
+    return pi.load(fileName);
+}
 
 int main( int argc, char **argv ) {
 
 	app = new KApplication ( argc, argv, "kshow" );
-	
+        KPreview::registerPreviewModule("IMAGE", previewHandler, PreviewPixmap);
 	KShowWindow *kShow = new KShowWindow();
 	KShowWindow::windowList.append( kShow );
 
