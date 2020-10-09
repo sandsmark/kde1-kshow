@@ -106,7 +106,7 @@ void KShowWindow::newVersion()
 	config = kapp->getConfig();
 	loadConfig();
 	config->setGroup("kshow");
-	if( config->readEntry("Version", "old") != VERSION ) {
+	if( config->readEntry("Version", VERSION) != VERSION ) {
 	    QString text;
 	    QPixmap icon;
 	    icon.load( kapp->kde_datadir().copy()+"/kshow/pics/manni.xpm");
