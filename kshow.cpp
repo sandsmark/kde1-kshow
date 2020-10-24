@@ -20,6 +20,8 @@ KShowWindow::KShowWindow( QWidget *, const char *name )
 	copyDir = QDir::homeDirPath();
 	setCaption( "kShow" );
 	windowList.setAutoDelete( FALSE );
+        stop_dia = FALSE;
+        albexec = FALSE;
 	setMinimumSize( MIN_WINDOW_WIDTH, MIN_WINDOW_HEIGHT);
 	newVersion();
 
