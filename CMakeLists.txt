@@ -84,7 +84,7 @@ install(FILES
 )
 
 install(FILES
-    diashow.xpm thumdialog.xpm
+    pics/diashow.xpm pics/thumdialog.xpm
     DESTINATION ${KDE1_TOOLBARDIR}
 )
 
