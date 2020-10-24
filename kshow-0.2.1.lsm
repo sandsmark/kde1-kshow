@@ -1,0 +1,14 @@
+Begin3
+Title:            kShow
+Version:          0.2.1
+Entered-date:     07MAR99
+Description:      Imageviewer -viewing Images from complete Directory.
+Keywords:         view image graphic KDE X11 Qt
+Author:           Ralf B. <rberger@fun.horx.de>
+Maintained-by:    Ralf B. <rberger@fun.horx.de>
+Original-site:    http://www.fun.horx.de/ralf.berger/kde/kshow/index.html
+Primary-site:     http://www.fun.horx.de/ralf.beger/kde
+Home-Page:        http://www.fun.horx.de/ralf.berger/kde
+Platform:         Qt, KDE.
+End
+
